@@ -12,3 +12,5 @@ rddl=make.design.data(sd)
 rddl$Psi$fix[rddl$Psi$stratum=="A" & rddl$Psi$tostratum=="H"]=0
 rddl$delta$fix=ifelse(rddl$delta$stratum=="A",0,1)
 crm(sd,rddl,initial=initial,model.parameters=modelspec)
+
+getwd()
